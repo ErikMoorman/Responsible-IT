@@ -1,0 +1,15 @@
+.skip-to-content-link {
+    position: absolute;
+    top: 0.5rem;
+    left: -100rem;
+    padding: 0.5rem;
+    z-index: -1;
+}
+
+.skip-to-content-link:focus {
+    left: 0.5rem;
+    z-index: 10;
+    /* background-color: var(--link-focus-color); */
+    background-color: var(--link-focus-bg-color);
+    color: var(--link-focus-color);
+}

@@ -1,0 +1,78 @@
+[data-darktheme='true'] {
+    --text-color: var(--white);
+    --background-color: var(--black-2);
+    --purple: #7c77ff;
+    --link-color: #1d9bf0;
+    /* --link-visited-color: #7c77ff; */
+    --link-hover-color: #1d9bf0;
+    --link-focus-bg-color: var(--black);
+    --link-focus-color: var(--white);
+    /* --subtle-shadow: 0 -5px 15px 3px rgb(255 255 255 / 2.5%); */
+    --subtle-shadow: none;
+    --subtle-border: var(--dark-grey);
+    /* --filter-button: var(--hva-purple); */
+    --filter-button-color: #b1bac8;
+    --menu-button-hover: var(--black-2);
+}
+
+[data-darktheme='true'] .main-header,
+[data-darktheme='true'] .main-footer {
+    --background-color: var(--black);
+    --nav-link-color: var(--white);
+}
+
+[data-darktheme='true'] .header-logo,
+[data-darktheme='true'] .footer-image {
+    filter: invert(1);
+}
+
+[data-grayscale='true'] {
+    filter: grayscale(1);
+}
+[data-highcontrast='true'] {
+    filter: contrast(1.5);
+}
+
+[data-grayscale='true'][data-highcontrast='true'] {
+    filter: grayscale(1) contrast(1.5);
+}
+
+[data-hideartwork='true'] img:not(.header-logo, .footer-image) {
+    display: none;
+}
+
+[data-hideartwork='true'] .hero-artwork {
+    background-image: none !important;
+    animation: none;
+}
+
+[data-reducemotion='true'],
+[data-reducemotion='true'] *,
+[data-reducemotion='true'] *::before,
+[data-reducemotion='true'] *::after {
+    transition: none !important;
+    animation-play-state: paused !important;
+}
+
+/* Check checkboxes if toggle is selected */
+[data-darktheme='true'] .accessibility-dropdown > li:nth-of-type(3) .accessibility-toggle-checkbox::after,
+[data-grayscale='true'] .accessibility-dropdown > li:nth-of-type(4) .accessibility-toggle-checkbox::after,
+[data-highcontrast='true'] .accessibility-dropdown > li:nth-of-type(5) .accessibility-toggle-checkbox::after,
+[data-hideartwork='true'] .accessibility-dropdown > li:nth-of-type(6) .accessibility-toggle-checkbox::after,
+[data-reducemotion='true'] .accessibility-dropdown > li:nth-of-type(7) .accessibility-toggle-checkbox::after {
+    opacity: 1;
+}
+
+/* Remove transitions & animation when reduced motion is prefered */
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation-play-state: paused !important;
+    }
+}

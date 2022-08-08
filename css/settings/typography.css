@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.heading-xl {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+
+    margin: 2.5rem 0 1rem;
+}
+
+.heading-l {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+
+    margin: 2rem 0 1rem;
+}
+
+.heading-m {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-color);
+
+    margin: 1.5rem 0 1rem;
+}
+
+.heading-s {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+
+    margin: 1.25rem 0 1rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.text-small {
+    font-size: 0.875rem;
+}
+
+@media (min-width: 40em) {
+    .heading-xl {
+        font-size: 3rem;
+
+        margin: 3rem 0 2rem;
+    }
+
+    .heading-l {
+        font-size: 2.25rem;
+
+        margin: 2.5rem 0 1.5rem;
+    }
+
+    .heading-m {
+        font-size: 1.5rem;
+
+        margin: 2rem 0 1.5rem;
+    }
+
+    .heading-s {
+        font-size: 1.19rem;
+
+        margin: 1.5rem 0 1rem;
+    }
+
+    p {
+        font-size: 1.19rem;
+        margin-bottom: 1.19rem;
+    }
+
+    .text-small {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,32 @@
+:root {
+    --black: #0b0c0c;
+    --black-2: #121414;
+    --dark-grey: #2c2f30;
+    --grey: #505a5f;
+    --light-grey: #f3f2f1;
+    --white: #fff;
+    --yellow: #fd0;
+    --orange: #f3ad16;
+    --red: #d4351c;
+    --purple: #564a97;
+    --hva-purple: #25167a;
+    --blue: #003078;
+    --light-blue: #1d70b8;
+    --turquoise: #19d4ac;
+    --green: #1eab14;
+
+    --subtle-shadow: 0 5px 15px 3px rgb(0 0 0 / 5%);
+    --subtle-border: var(--light-grey);
+
+    --text-color: var(--black);
+    --link-color: var(--light-blue);
+    --link-visited-color: var(--hva-purple);
+    --link-hover-color: var(--blue);
+    --link-focus-bg-color: var(--white);
+    --link-focus-color: var(--black);
+    --background-color: var(--white);
+    --filter-button-color: #566072;
+    --menu-button-hover: #ebeae9;
+
+    /* --filter-button: var(--purple); */
+}
