@@ -18,3 +18,5 @@ storedPreferences.forEach(preference => {
     const preferenceValue = localStorage.getItem(preference)
     if (preferenceValue) root.setAttribute(`data-${preference}`, preferenceValue)
 })
+
+//Get language preference

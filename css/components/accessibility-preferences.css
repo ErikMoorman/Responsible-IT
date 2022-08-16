@@ -39,7 +39,12 @@
 
 [data-hideartwork='true'] img:not(.header-logo, .footer-image) {
     display: none;
+
 }
+[data-hideartwork='true'] canvas {
+    display: none;
+}
+
 
 [data-hideartwork='true'] .hero-artwork {
     background-image: none !important;
@@ -53,6 +58,8 @@
     transition: none !important;
     animation-play-state: paused !important;
 }
+
+
 
 /* Check checkboxes if toggle is selected */
 [data-darktheme='true'] .accessibility-dropdown > li:nth-of-type(3) .accessibility-toggle-checkbox::after,
