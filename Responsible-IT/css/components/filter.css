@@ -1,0 +1,38 @@
+.filter-menu {
+    display: none;
+}
+
+.filter-menu-button {
+    margin-top: 1rem;
+}
+
+.filter-menu li {
+    display: inline-block;
+    margin: 0 0.25rem 0.5rem 0;
+}
+
+.menu-button-opened + .filter-menu {
+    display: block;
+}
+
+@media screen and (min-width: 40rem) {
+    .filter-menu {
+        opacity: 0.8;
+        transition: opacity 0.5s;
+        position: sticky;
+        top: 2.5rem;
+    }
+
+    .filter-container:hover .filter-menu,
+    .filter-container:focus-within .filter-menu {
+        opacity: 1;
+    }
+
+    .filter-menu {
+        display: block;
+    }
+
+    .filter-menu-button {
+        display: none;
+    }
+}

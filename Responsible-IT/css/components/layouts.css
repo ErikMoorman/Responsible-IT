@@ -1,0 +1,38 @@
+.width-container {
+    width: 100%;
+    max-width: 75rem;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 40rem) {
+    .grid-row {
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    .grid-2-1 {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .grid-1-2 {
+        /* dev? */
+        grid-template-columns: 0.8fr 2fr;
+    }
+
+    .grid-1-1-1 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .column-middle {
+        max-width: 75ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 73rem) {
+    .width-container {
+        width: calc(100% - 1rem);
+    }
+}
