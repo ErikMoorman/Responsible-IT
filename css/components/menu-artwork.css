@@ -1,0 +1,43 @@
+.hero-artwork {
+    display: grid;
+    place-items: center;
+    margin-top: -6.5rem;
+    position: relative;
+    overflow: hidden;
+    --text-color: var(--white);
+    background-color: var(--grey);
+}
+
+.hero-artwork::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(rgba(0, 0, 0, 0.65) 30%, rgb(0 0 0 / 20%));
+}
+
+.main-header {
+    background-color:transparent;
+    position: relative;
+    z-index: 2;
+    box-shadow: var(--subtle-shadow);
+}
+
+.header-nav-link:hover {
+    color: white;
+}
+
+.header-nav-link,
+.header-nav-link:visited {
+    color:white;
+}
+
+.menu-button {
+    color: white;
+    border: 3px solid white;
+}
+
+.header-logo,
+.footer-image {
+    filter: invert(1);
+}

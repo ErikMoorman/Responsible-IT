@@ -24,8 +24,7 @@
 }
 
 .hero-big::after,
-.hero-small::after,
-.hero-artwork::after {
+.hero-small::after {
     content: '';
     width: 100%;
     height: 100%;
