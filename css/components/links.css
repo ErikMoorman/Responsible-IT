@@ -11,10 +11,12 @@ a:hover {
 }
 
 a:visited {
+    /* color: var(--link-visited-color); */
     color: var(--purple);
 }
 
 a:focus {
+    /* color: var(--link-focus-color); */
     background-color: var(--link-focus-bg-color);
     text-decoration: none;
     border: none;

@@ -12,11 +12,9 @@ if (localStorage.getItem('darktheme')) {
 } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     root.setAttribute('data-darktheme', 'true')
 }
-// Get other preferences
-const storedPreferences = ['grayscale', 'highcontrast', 'hideartwork', 'reducemotion']
+// Get filter preferences
+const storedPreferences = ['grayscale', 'highcontrast', 'hideartwork']
 storedPreferences.forEach(preference => {
     const preferenceValue = localStorage.getItem(preference)
     if (preferenceValue) root.setAttribute(`data-${preference}`, preferenceValue)
 })
-
-//Get language preference

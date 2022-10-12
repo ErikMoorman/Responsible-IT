@@ -1,6 +1,6 @@
 .main-footer {
-    --background-color: var(--light-grey);
-    background-color: var(--background-color);
+        background-color: var(--background-color);
+    box-shadow: var(--subtle-shadow);
 }
 
 .footer-container {

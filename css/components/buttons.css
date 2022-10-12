@@ -32,7 +32,7 @@ button[aria-disabled='true'] {
 }
 
 .primary-button:hover {
-    background-color: #1962a3;
+    /* background-color: #1962a3; */
 }
 
 .secondary-button {
@@ -56,32 +56,31 @@ button[aria-disabled='true'] {
 }
 
 .filter-button {
-    color: var(--filter-button-color);
-    border: 1.5px solid var(--filter-button-color);
+    color: var(--purple);
+    border: 1.5px solid var(--purple);
     background: none;
-    box-shadow: 0.1em 0.1em 0 var(--filter-button-color);
+    box-shadow: 0.1em 0.1em 0 var(--purple);
     transform: translate(-0.1em, -0.1em);
     transition: transform 0.2s, box-shadow 0.2s;
     width: auto;
-    border-radius: 0.4rem;
 }
 
 .filter-button:focus {
-    box-shadow: 0 0 0 var(--filter-button-color);
+    box-shadow: 0 0 0 var(--purple);
     transform: translate(0, 0);
     outline: 0;
     border-style: dashed;
 }
 
 .filter-button:hover {
-    box-shadow: 0 0 0 var(--filter-button-color);
+    box-shadow: 0 0 0 var(--purple);
     transform: translate(0, 0);
 }
 
 .filter-button-active {
-    box-shadow: 0 0 0 var(--filter-button-color);
+    box-shadow: 0 0 0 var(--purple);
     transform: translate(0, 0);
-    background-color: var(--filter-button-color);
+    background-color: var(--purple);
     color: var(--background-color);
 }
 
@@ -90,6 +89,10 @@ button[aria-disabled='true'] {
     color: var(--text-color);
     background: none;
     border: 3px solid var(--text-color);
+}
+
+.menu-button:hover {
+    /* background-color: var(--menu-button-hover); */
 }
 
 .menu-button:focus {
