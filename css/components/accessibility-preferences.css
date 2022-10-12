@@ -22,7 +22,7 @@
 }
 
 [data-darktheme='true'] .header-logo,
-[data-darktheme='true'] .footer-image{
+[data-darktheme='true'] .footer-image {
     filter: invert(1);
 }
 
@@ -37,11 +37,49 @@
     filter: grayscale(1) contrast(1.5);
 }
 
+[data-hideartwork='true'] img:not(.header-logo, .footer-image) {
+    display: none;
+
+}
+[data-hideartwork='true'] canvas {
+    display: none;
+}
+
+
+[data-hideartwork='true'] .hero-artwork {
+    background-image: none !important;
+    animation: none;
+}
+
+[data-reducemotion='true'],
+[data-reducemotion='true'] *,
+[data-reducemotion='true'] *::before,
+[data-reducemotion='true'] *::after {
+    transition: none !important;
+    animation-play-state: paused !important;
+}
+
+
+
 /* Check checkboxes if toggle is selected */
 [data-darktheme='true'] .accessibility-dropdown > li:nth-of-type(3) .accessibility-toggle-checkbox::after,
 [data-grayscale='true'] .accessibility-dropdown > li:nth-of-type(4) .accessibility-toggle-checkbox::after,
-[data-highcontrast='true'] .accessibility-dropdown > li:nth-of-type(5) .accessibility-toggle-checkbox::after
- {
+[data-highcontrast='true'] .accessibility-dropdown > li:nth-of-type(5) .accessibility-toggle-checkbox::after,
+[data-hideartwork='true'] .accessibility-dropdown > li:nth-of-type(6) .accessibility-toggle-checkbox::after,
+[data-reducemotion='true'] .accessibility-dropdown > li:nth-of-type(7) .accessibility-toggle-checkbox::after {
     opacity: 1;
 }
 
+/* Remove transitions & animation when reduced motion is prefered */
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation-play-state: paused !important;
+    }
+}

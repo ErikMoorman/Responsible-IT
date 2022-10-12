@@ -6,22 +6,27 @@
     --light-grey: #f3f2f1;
     --white: #fff;
     --yellow: #fd0;
+    --orange: #f3ad16;
     --red: #d4351c;
+    --purple: #564a97;
+    --hva-purple: #25167a;
     --blue: #003078;
     --light-blue: #1d70b8;
+    --turquoise: #19d4ac;
+    --green: #1eab14;
 
     --subtle-shadow: 0 5px 15px 3px rgb(0 0 0 / 5%);
     --subtle-border: var(--light-grey);
 
     --text-color: var(--black);
-    --text-color2: var(--white);
     --link-color: var(--light-blue);
-    --link-visited-color: var(--dark-grey);
+    --link-visited-color: var(--hva-purple);
     --link-hover-color: var(--blue);
     --link-focus-bg-color: var(--white);
     --link-focus-color: var(--black);
     --background-color: var(--white);
+    --filter-button-color: #566072;
+    --menu-button-hover: #ebeae9;
 
     /* --filter-button: var(--purple); */
-    --menu-button-hover: #ebeae9;
 }

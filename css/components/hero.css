@@ -1,5 +1,6 @@
 .hero-big,
-.hero-small {
+.hero-small,
+.hero-artwork {
     display: grid;
     place-items: center;
     margin-top: -4.5rem;
@@ -10,11 +11,16 @@
 }
 
 .hero-big {
-    height: min(85vh, 70rem);
+    height: min(100vh, 70rem);
 }
 
 .hero-small {
     height: min(75vh, 40rem);
+}
+
+.hero-artwork {
+    height: min(75vh, 40rem);
+    background-color: var(--black-2);
 }
 
 .hero-big::after,
@@ -23,10 +29,8 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    inset: 0;
-
-    /* wip, iets breder maken nog */
-    background: radial-gradient(rgb(0 0 0 / 80%), rgb(0 0 0 / 20%));
+    inset: 3rem 0 0;
+    background: radial-gradient(rgba(0, 0, 0, 0.65) 30%, rgb(0 0 0 / 20%));
 }
 
 .hero-img {
